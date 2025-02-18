@@ -62,9 +62,9 @@ export default function GuestbookPage() {
   return (
     <>
       <PageSEO
-        title="Guestbook - Hello World"
-        description="A simple guestbook page"
-      />
+        title={`Guestbook - ${siteMetadata.author}`}
+         description="Guestbook for my future visitors"
+       />
       <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           Hello World
