@@ -1,9 +1,5 @@
-// import prisma from 'lib/prisma'
-
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
-
-
 
 export default function GuestbookPage() {
   return (
@@ -23,4 +19,3 @@ export default function GuestbookPage() {
     </>
   )
 }
-
