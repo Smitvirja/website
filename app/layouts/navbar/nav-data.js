@@ -1,5 +1,5 @@
 import config from '~/config.json';
-
+//this consist of the side bar info 
 export const navLinks = [
   {
     label: 'Projects',
@@ -21,14 +21,14 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Bluesky',
-    url: `https://bsky.app/profile/${config.bluesky}`,
-    icon: 'bluesky',
+    label: 'Reddit',
+    url: `https://www.reddit.com/user/${config.Reddit}`,
+    icon: 'reddit',
   },
   {
-    label: 'Figma',
-    url: `https://www.figma.com/${config.figma}`,
-    icon: 'figma',
+    label: 'overflow',
+    url: `https://stackoverflow.com/users/18501284/smit`,
+    icon: 'stackoverflow',
   },
   {
     label: 'Github',

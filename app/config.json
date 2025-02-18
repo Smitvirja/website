@@ -1,11 +1,21 @@
 {
-  "name": "Hamish Williams",
-  "role": "Designer",
-  "disciplines": ["Developer", "Prototyper", "Animator", "Illustrator", "Modder"],
-  "url": "https://hamishw.com",
-  "bluesky": "hamishw.com",
+  "name": "Smit Virja",
+  "role": "Student",
+"disciplines": [
+    "Ethical Hacker",
+    "Cybersecurity pecialist",
+    "Penetration Tester",
+    "Developer",
+    "Coder",
+    "Modder",
+    "Reverse Engineer",
+    "Network Security Enthusiast",
+    "AI & Automation Enthusiast"
+  ],
+  "url": "https://smitcloud.org",
+  "Reddit": "Smit4524",
   "figma": "@Hamish",
-  "github": "HamishMW",
-  "repo": "https://github.com/HamishMW/portfolio",
+  "github": "Smitvirja",
+  "repo": "https://github.com/Smitvirja",
   "ascii": "__  __  __\n\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215\n"
 }

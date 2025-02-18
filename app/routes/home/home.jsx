@@ -38,10 +38,10 @@ export const links = () => {
     },
   ];
 };
-
+//the titel that goes with the name on the top
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
+    title: 'Developer',
     description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
   });
 };
@@ -56,7 +56,7 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectTwo, projectThree, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -98,7 +98,7 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
@@ -117,13 +117,13 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       <ProjectSummary
-        id="project-2"
+        id="project-1"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={2}
+        index={1}
         title="Video game progress tracking"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="View website"

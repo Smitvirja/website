@@ -18,22 +18,20 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Hello, I'm a Smit Virja" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I’m currently pursuing a BCA degree and embarking on an exciting journey into the world of cybersecurity, IT, and AI. My curiosity and enthusiasm for technology have led me here, and I'm thrilled to explore the vast possibilities this field offers.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      I’m deeply passionate about continuous learning and growth in IT, with a strong desire to enhance my skills not only in cybersecurity but also in artificial intelligence. My goal is to contribute to the security of digital ecosystems and harness the power of AI to help organizations navigate the evolving landscape of cyber threats.
+    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+      If you share my passion for IT, cybersecurity, and AI, let's connect! I’m eager to network with like-minded professionals, mentors, and organizations that can help me expand my knowledge and make a meaningful impact in the industry.
     </Text>
   </Fragment>
 );
+
 
 export const Profile = ({ id, visible, sectionRef }) => {
   const [focused, setFocused] = useState(false);
