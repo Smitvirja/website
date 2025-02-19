@@ -37,7 +37,7 @@ npm run deploy
 
 ## Permissions
 
-I have used an open-source website from HamishMW[live site](https://github.com/HamishMW/portfolio), so I want to let everyone know that they are free to use it as well. The original author, HamishMW, created this site, and I encourage anyone who uses it to acknowledge their work.
+I have used an open-source website from HamishMW [(Github)](https://github.com/HamishMW/portfolio), so I want to let everyone know that they are free to use it as well. The original author, HamishMW, created this site, and I encourage anyone who uses it to acknowledge their work.
 
 If you decide to use this website, feel free to modify the theme and components to make it your own. However, if you are using the design largely unmodified, I’d appreciate it if you credit HamishMW as the original creator.
 
