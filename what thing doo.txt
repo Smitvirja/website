@@ -1,0 +1,16 @@
+F:\Code\project\html\website\app\routes\home\home.jsx here lies all the changes for the home page
+
+F:\Code\project\html\website\app\routes\home\profile.jsx here lies that about section code 
+
+F:\Code\project\html\website\app\routes\home this folder consist of all the ui changes on the page
+
+F:\Code\project\html\website\app\routes\contact\contact.jsx code for the contact me make changes here and solve the error
+
+F:\Code\project\html\website\app\layouts\navbar\nav-data.js code for the naviagtion from the right bar
+
+F:\Code\project\html\website\app\config.json the config file
+
+F:\Code\project\html\website\app\components\icon\icons.svg for the icon used in the side bar and other
+
+
+F:\Code\project\html\website\app\components\monogram\monogram.jsx  this is the code for the logo on the left top that goes blue when hover

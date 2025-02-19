@@ -1,17 +1,14 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
-
+﻿
+ 
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+ORIGINAL DESIGNER & DEVELOPER | オリジナルデザイナー & デベロッパー
 
 Hamish Williams
-Hand crafted design & web development
+Handcrafted design & web development
 
 Design tools:
 Figma
@@ -20,6 +17,15 @@ Blender
 
 twitter.com/hamishmw
 github.com/hamishmw
+
+_______________________________________________________________________________
+
+MODIFICATIONS & REVISIONS |  シュウセイ & カイリョウ
+
+Smit Virja
+Passionate about cybersecurity, AI, and software development
+
+github.com/Smitvirja
 
 _______________________________________________________________________________
 
