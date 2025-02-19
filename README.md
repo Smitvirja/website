@@ -5,7 +5,7 @@
 
 [![Site preview](/public/site-preview.png)](https://smitcloud.org)
 
-My design portfolio to showcase a few projects. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://smitcloud.org).
+My personal portfolio website, showcasing my work and projects. Originally built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). Based on an open-source template by HamishMW, with my own customizations. View the [live site](https://smitcloud.org).
 
 ## Install & run
 
