@@ -21,13 +21,15 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hello, I'm a Smit Virja" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m currently pursuing a BCA degree and embarking on an exciting journey into the world of cybersecurity, IT, and AI. My curiosity and enthusiasm for technology have led me here, and I'm thrilled to explore the vast possibilities this field offers.
+      Hello! I'm Smit Virja, a BCA graduate from SDJ College with a strong passion for ethical hacking, red teaming, and offensive security. My journey in technology is driven by curiosity, hands-on learning, and a commitment to mastering the tools and techniques used in real-world attack simulations.    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+      I recently earned the Practical Junior Penetration Tester (PJPT) certification from TCM Security, where I demonstrated hands-on skills in areas like network enumeration, exploitation, privilege escalation, and post-exploitation — all from an attacker’s perspective.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m deeply passionate about continuous learning and growth in IT, with a strong desire to enhance my skills not only in cybersecurity but also in artificial intelligence. My goal is to contribute to the security of digital ecosystems and harness the power of AI to help organizations navigate the evolving landscape of cyber threats.
+      In addition to red teaming, I’m also exploring how artificial intelligence can be leveraged in offensive and defensive security, particularly in areas like bypassing detection and automating recon.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      If you share my passion for IT, cybersecurity, and AI, let's connect! I’m eager to network with like-minded professionals, mentors, and organizations that can help me expand my knowledge and make a meaningful impact in the industry.
+      I’m passionate about helping organizations strengthen their security by thinking like an adversary, uncovering vulnerabilities before real attackers can. I believe in the power of ethical hacking to create safer digital environments.    
     </Text>
   </Fragment>
 );

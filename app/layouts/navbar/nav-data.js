@@ -10,7 +10,7 @@ export const navLinks = [
     pathname: '/#details',
   },
   {
-    label: 'Articles',
+    label: 'Certification',
     pathname: '/articles',
   },
   {
