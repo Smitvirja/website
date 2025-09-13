@@ -1,15 +1,15 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
+// import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
 import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
+// import gamestackTexture2 from '~/assets/gamestack-list.jpg';
+// import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+// import gamestackTexture from '~/assets/gamestack-login.jpg';
+// import sliceTextureLarge from '~/assets/slice-app-large.jpg';
+// import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
+// import sliceTexture from '~/assets/slice-app.jpg';
+// import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
+// import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
+// import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -20,6 +20,8 @@ import config from '~/config.json';
 import styles from './home.module.css';
 import cloudifymain from '~/assets/cloudifymainpage.png';
 import cloudifylogin from '~/assets/loginpage.png';
+import mainpic from '~/assets/start.jpeg';
+import notepic from '~/assets/note.jpeg';
 
 // Prefetch draco decoader wasm
 export const links = () => {
@@ -135,11 +137,11 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: `${cloudifylogin} 375w, ${gamestackTextureLarge} 750w`,
+              srcSet: `${mainpic} 375w, ${mainpic} 750w`,
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: `${cloudifymain} 375w, ${gamestackTexture2Large} 750w`,
+              srcSet: `${notepic} 375w, ${notepic} 750w`,
               placeholder: gamestackTexture2Placeholder,
             },
           ],

@@ -18,28 +18,19 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
   const [hovered, setHovered] = useState(false);
   const [dateTime, setDateTime] = useState(null);
   const reduceMotion = useReducedMotion();
-  const { title, abstract, date, featured, banner, verificationLink } = frontmatter;
+  const { title, abstract, date, featured, banner } = frontmatter;
 
   useEffect(() => {
     setDateTime(formatDate(date));
   }, [date, dateTime]);
 
-  const handleMouseEnter = () => setHovered(true);
-  const handleMouseLeave = () => setHovered(false);
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
 
-  // Decide whether this post links to external site or internal article
-  const Wrapper = verificationLink ? 'a' : RouterLink;
-  const wrapperProps = verificationLink
-    ? {
-        href: verificationLink,
-        target: '_blank',
-        rel: 'noopener noreferrer',
-      }
-    : {
-        unstable_viewTransition: true,
-        prefetch: 'intent',
-        to: `/articles/${slug}`,
-      };
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
 
   return (
     <article
@@ -64,9 +55,10 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
           />
         </div>
       )}
-
-      <Wrapper
-        {...wrapperProps}
+      <RouterLink
+        unstable_viewTransition
+        prefetch="intent"
+        to={`/articles/${slug}`}
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -83,22 +75,15 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
             {abstract}
           </Text>
           <div className={styles.postFooter}>
-            <Button
-              secondary
-              iconHoverShift
-              icon="chevron-right"
-              as="a"
-              href={verificationLink || `/articles/${slug}`}
-              target={verificationLink ? '_blank' : undefined}
-              rel={verificationLink ? 'noopener noreferrer' : undefined}
-            >
-              {verificationLink ? 'Verify' : 'Read article'}
+            <Button secondary iconHoverShift icon="chevron-right" as="div">
+              Read article
             </Button>
-            
+            <Text className={styles.timecode} size="s">
+              {timecode}
+            </Text>
           </div>
         </div>
-      </Wrapper>
-
+      </RouterLink>
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           477
@@ -107,7 +92,6 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
     </article>
   );
 }
-
 
 function SkeletonPost({ index }) {
   return (

@@ -23,6 +23,7 @@ export const meta = () => {
     title: 'Contact',
     description:
       'Send me a message if you’re interested in discussing a project or if you just want to say hi',
+     
   });
 };
 
@@ -119,7 +120,7 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              <DecoderText text="Sorry this is under devlopement 👩‍💻." start={status !== 'exited'} delay={300} />
             </Heading>
             <Divider
               className={styles.divider}
@@ -194,6 +195,30 @@ export const Contact = () => {
             >
               Send message
             </Button>
+
+
+            <Heading
+              className={styles.text}
+              data-status={status}
+              level={5}
+              as="h3"
+              style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
+            >
+              <br />
+              <DecoderText text="But You can contact me through this.." start={status !== 'exited'} delay={300} />
+            </Heading>
+            <Button
+              className={styles.button}
+              data-status={status}
+              data-sending={sending}
+              style={getDelay(tokens.base.durationM, initDelay)}
+              disabled={sending}
+              icon="send"
+              type="submit"
+              href={"https://www.linkedin.com/in/smit-virja/"}
+            >
+              linkedin
+            </Button>
           </Form>
         )}
       </Transition>
@@ -232,9 +257,13 @@ export const Contact = () => {
         )}
       </Transition>
       <Footer className={styles.footer} />
+
+
     </Section>
   );
 };
+
+
 
 function getDelay(delayMs, offset = numToMs(0), multiplier = 1) {
   const numDelay = msToNum(delayMs) * multiplier;
