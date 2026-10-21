@@ -1,16 +1,16 @@
 import { formatTimecode, readingTime } from '~/utils/timecode';
 
 export async function getPosts() {
-  const modules = import.meta.glob('../articles.*.mdx', { eager: true });
-  const build = await import('virtual:remix/server-build');
+  const modules = import.meta.glob('../articlestore/articles.*.mdx', {
+    eager: true,
+  });
 
   const posts = await Promise.all(
     Object.entries(modules).map(async ([file, post]) => {
-      let id = file.replace('../', 'routes/').replace(/\.mdx$/, '');
-      let slug = build.routes[id].path;
-      if (slug === undefined) throw new Error(`No route for ${id}`);
+      let slug = file.replace('../articlestore/articles.', '').replace(/\.mdx$/, '');
+      if (!slug) throw new Error(`No slug for ${file}`);
 
-      const text = await import(`../articles.${slug}.mdx?raw`);
+      const text = await import(`../articlestore/articles.${slug}.mdx?raw`);
       const readTime = readingTime(text.default);
       const timecode = formatTimecode(readTime);
 
