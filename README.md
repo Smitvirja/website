@@ -1,27 +1,57 @@
-<p align="center">
-  <img src="/public/favicon.svg" width="50" alt="Logo" />
-</p>
-<h1 align="center">Personal portfolio</h1>
+# SmitCloud — Personal Portfolio
 
-[![Site preview](/public/site-preview.png)](https://smitcloud.org)
+Welcome to the repository for **SmitCloud**, my personal portfolio website, where I showcase my projects, technical interests, and work.
 
-My personal portfolio website, showcasing my work and projects. Originally built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). Based on an open-source template by HamishMW, with my own customizations. View the [live site](https://smitcloud.org).
+🌐 **Live Website:** [smitcloud.org](https://www.smitcloud.org)
 
-## Install & run
+## About
 
-Make sure you have nodejs `19.9.0` or higher and npm `9.6.3` or higher installed. Install dependencies with:
+SmitCloud is my personal portfolio, built to provide a central place to explore my work, projects, and technical journey.
+
+The website is built using:
+
+- **Remix** — Web framework
+- **Three.js** — 3D graphics and interactive visuals
+- **Framer Motion** — Animations and transitions
+- **Cloudflare Pages** — Hosting and deployment
+
+The project started with an open-source portfolio template by [HamishMW](https://github.com/HamishMW/portfolio), which I customized for my own website.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js `19.9.0` or later
+- npm `9.6.3` or later
+
+### Installation
+
+Clone the repository and navigate into the project directory:
+
+```bash
+git clone <your-repository-url>
+cd <your-repository-directory>
+```
+
+Install the dependencies:
 
 ```bash
 npm install
 ```
 
-Once it's done start up a local server with:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-To view the components storybook:
+Open the local URL displayed in your terminal to view the website.
+
+### Storybook
+
+To explore the project's UI components, run:
 
 ```bash
 npm run dev:storybook
@@ -29,25 +59,34 @@ npm run dev:storybook
 
 ## Deployment
 
-I've set up the site using Cloudflare for hosting. Deploy the site to Cloudflare Pages.:
+The website is configured for deployment to Cloudflare Pages.
+
+To deploy, run:
 
 ```bash
 npm run deploy
 ```
 
-## Permissions
+Make sure your Cloudflare account and deployment configuration are set up correctly before deploying.
 
-I have used an open-source website from [HamishMW](https://github.com/HamishMW/portfolio), so I want to let everyone know that they are free to use it as well. The original author, HamishMW, created this site, and I encourage anyone who uses it to acknowledge their work.
+## Credits
 
-If you decide to use this website, feel free to modify the theme and components to make it your own. However, if you are using the design largely unmodified, I’d appreciate it if you credit HamishMW as the original creator.
+This project is based on the open-source portfolio template created by [HamishMW](https://github.com/HamishMW/portfolio).
 
-I do not give permission to present any of my projects as your own. This website serves as my portfolio, showcasing real projects I have worked on.
+The original template provided the foundation for the website, which I subsequently customized for SmitCloud.
 
-## FAQs
+Thank you to the original creator for making the project available to the community.
 
-<details>
-  <summary>How do I change the color on the <code>DisplacementSphere</code> (blobby rotating thing in the background).</summary>
-  
-  You'll need to edit the fragment shader. [Check out this issue for more details](https://github.com/HamishMW/portfolio/issues/19#issuecomment-870996615).
-</details>
+## License & Attribution
 
+Please refer to the original repository for its license and usage terms:
+
+[HamishMW/portfolio](https://github.com/HamishMW/portfolio)
+
+This repository represents my personal website and its customizations. The projects and work showcased on the live website should not be assumed to belong to other users of the template.
+
+---
+
+Made with ❤️ by Smit.
+
+🌐 [smitcloud.org](https://www.smitcloud.org)
