@@ -8,8 +8,8 @@ import { formatTimecode, readingTime } from '~/utils/timecode';
 
 export async function loader({ request }) {
   const slug = request.url.split('/').at(-1);
-  const module = await import(`../certi.${slug}.mdx`);
-  const text = await import(`../certi.${slug}.mdx?raw`);
+  const module = await import(`../certificates/certi.${slug}.mdx`);
+  const text = await import(`../certificates/certi.${slug}.mdx?raw`);
   const readTime = readingTime(text.default);
   const ogImage = `${config.url}/static/${slug}-og.jpg`;
 
